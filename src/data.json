@@ -1,12 +1,12 @@
 [
-    {"id": 1, "name": "Muhammad","age": 20},
-    {"id": 2, "name": "Ahmed","age": 20},
-    {"id": 3, "name": "Ali","age": 20},
-    {"id": 4, "name": "Abid","age": 20},
-    {"id": 5, "name": "Selva","age": 20},
-    {"id": 6, "name": "Muhammad","age": 20},
-    {"id": 7, "name": "Muhammad","age": 20},
-    {"id": 8, "name": "Muhammad","age": 20},
-    {"id": 9, "name": "Muhammad","age": 20},
-    {"id": 10, "name": "Muhammad","age": 20}
+    {"id": 1, "name": "Muhammad","age": 20, "value":"Option1"},
+    {"id": 2, "name": "Ahmed","age": 20,"value":"Option2"},
+    {"id": 3, "name": "Ali","age": 20,"value":"Option2"},
+    {"id": 4, "name": "Abid","age": 20,"value":"Option2"},
+    {"id": 5, "name": "Selva","age": 20,"value":"Option3"},
+    {"id": 6, "name": "Muhammad","age": 20,"value":"Option4"},
+    {"id": 7, "name": "Muhammad","age": 20,"value":"Option5"},
+    {"id": 8, "name": "Muhammad","age": 20,"value":"Option6"},
+    {"id": 9, "name": "Muhammad","age": 20,"value":"Option5"},
+    {"id": 10, "name": "Muhammad","age": 20,"value":"Option2"}
 ]

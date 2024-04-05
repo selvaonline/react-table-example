@@ -2,6 +2,8 @@ import data from './data.json'
 import {useState,useMemo, useEffect} from 'react';
 import axios from 'axios';
 import {MaterialReactTable}from 'material-react-table';
+import {EditAutocomplete} from './EditAutocomplete'
+
 
 export function Example(){
 
@@ -20,6 +22,14 @@ export function Example(){
           {
             accessorKey: 'age', 
             header: 'Age',
+          },
+          {
+            accessorKey: 'value', 
+            header: 'Value',
+            Edit: (props)=>{
+              console.log('props', props)
+              return <EditAutocomplete {...props} />
+            }
           },
         ],
         [],
@@ -52,6 +62,7 @@ export function Example(){
 
       const onRowUpdate = async ( {row,values, table}) =>{
 
+        console.log('row', row, 'values', values)
 
         // setTableData(tableData.map((d, i) => row.index === i ? {...values}: d))
 
