@@ -5,7 +5,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 const options = ['Option1', 'Option2', 'Option3', 'Option4', 'Option5', 'Option6','Option7'];
 export function EditAutocomplete({row, table}){
   
-    const [value, setValue] = React.useState(options[0]);
+    const [value, setValue] = React.useState(row.original.value);
     const [inputValue, setInputValue] = React.useState('');
 
     const {setEditingRow} =table;
@@ -19,7 +19,7 @@ export function EditAutocomplete({row, table}){
 
           setEditingRow(row);
         }}
-        inputValue={inputValue || row.original.value}
+        inputValue={inputValue}
         onInputChange={(event, newInputValue) => {
           setInputValue(newInputValue);
         }}
