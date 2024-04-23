@@ -14,7 +14,7 @@ export function EditAutocomplete({row, table}){
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
-          row.original.value = newValue;
+          //row.original.value = newValue;
           row._valuesCache.value = newValue;
 
           setEditingRow(row);
